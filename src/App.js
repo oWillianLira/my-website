@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+
+import main_me from './assets/img/main_me.png';
+import Home from './Components/Home';
+
+const Area = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  > picture img {
+    width: 200px;
+    margin: 40px auto -20px;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Area className="container mx-auto py-5">
+      <Home />
+      <picture className="">
+        <img src={main_me} alt="A drawing of me" />
+      </picture>
+    </Area>
   );
 }
 
