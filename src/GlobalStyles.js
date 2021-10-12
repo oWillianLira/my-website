@@ -1,9 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const colors = {
-  light: '#f2f2f2',
-  blue: '#6688aa',
-  d_blue: '#446688',
+  bg: '#f2f2f2',
+  primary: '#6688aa',
+  btn: '#446688',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -14,7 +14,8 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   padding: 0;
-  background-color: ${colors.light};
+  background-color: ${colors.bg};
+  font-size: 16px;
 }
 `;
 

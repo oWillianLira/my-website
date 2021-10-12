@@ -1,33 +1,45 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Ballon from '../Chat';
 
-const Chat = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 90%;
-  max-width: 550px;
-  margin: 0 auto;
+import Ballon from '../Ballon';
+import Chat from '../Chat';
+import main_me from '../../assets/img/main_me.png';
+
+const Image = styled.picture`
+  width: 200px;
+  margin: 40px auto -1.25rem;
 `;
 
 export default function Home() {
   return (
-    <Chat>
-      <Ballon delay={0.8}>
-        <p>Hello! Good to see you here...</p>
-      </Ballon>
-      <Ballon delay={2}>
-        <p>
-          If you don't know, I'm Willian Lira <br />
-          Front-End Web Developer and this is my website
-        </p>
-      </Ballon>
-      <Ballon delay={4}>
-        <p>And here you can see:</p>
-        <a href="#">My Portfolio</a>
-        <a href="#">My Resume</a>
-        <a href="#">My links</a>
-      </Ballon>
-    </Chat>
+    <>
+      <Chat>
+        <Ballon delay={0.8}>
+          <p>Hello! Good to see you here...</p>
+        </Ballon>
+        <Ballon delay={2}>
+          <p>
+            If you don't know, I'm Willian Lira <br />
+            Front-End Web Developer and this is my website
+          </p>
+        </Ballon>
+        <Ballon delay={4}>
+          <p>And here you can see:</p>
+          <a href="#o">my PORTFOLIO</a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/file/d/128XDkeQmIZ5WHqU5ayQ3mUybW4NZdOJz/view?usp=sharing"
+          >
+            my RESUME
+          </a>
+          <Link to="/links/">my LINKS</Link>
+        </Ballon>
+      </Chat>
+
+      <Image>
+        <img src={main_me} alt="A drawing of me" />
+      </Image>
+    </>
   );
 }
