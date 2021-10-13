@@ -44,15 +44,11 @@ const Message = styled.div`
     letter-spacing: 1px;
     margin-bottom: 10px;
     background-color: ${colors.btn}cc;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 8px;
     transition: 250ms;
     display: flex;
     align-items: center;
-
-    svg {
-      margin-right: 10px;
-    }
 
     &:first-of-type {
       margin-top: 20px;
