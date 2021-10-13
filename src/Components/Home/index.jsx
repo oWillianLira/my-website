@@ -1,14 +1,9 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import Eumoji from '../Eumoji';
 
 import Ballon from '../Ballon';
 import Chat from '../Chat';
 import main_me from '../../assets/img/main_me.png';
-
-const Image = styled.picture`
-  width: 200px;
-  margin: 40px auto -1.25rem;
-`;
 
 export default function Home() {
   return (
@@ -37,9 +32,9 @@ export default function Home() {
         </Ballon>
       </Chat>
 
-      <Image>
+      <Eumoji>
         <img src={main_me} alt="A drawing of me" />
-      </Image>
+      </Eumoji>
     </>
   );
 }
