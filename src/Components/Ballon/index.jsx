@@ -15,7 +15,7 @@ const appear = keyframes`
 
 const Message = styled.div`
   width: fit-content;
-  min-width: 325px;
+  min-width: 300px;
   max-width: 100%;
   display: grid;
   background: ${colors.primary};
@@ -25,7 +25,7 @@ const Message = styled.div`
   margin-bottom: 10px;
 
   animation-name: ${appear};
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   position: relative;
   opacity: 0;
@@ -59,6 +59,10 @@ const Message = styled.div`
   }
 `;
 
-export default function Ballon({ children, delay }) {
-  return <Message style={{ animationDelay: delay + 's' }}>{children}</Message>;
+export default function Ballon({ children, delay, center }) {
+  return (
+    <Message style={{ animationDelay: delay + 's' }} className={center ? 'ml-auto mr-auto' : null}>
+      {children}
+    </Message>
+  );
 }

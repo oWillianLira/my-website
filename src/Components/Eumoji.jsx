@@ -11,9 +11,15 @@ const appear = keyframes`
 `;
 
 const Image = styled.picture`
-  width: 200px;
+  width: 90%;
+  max-width: 500px;
   margin: 40px auto -1.25rem;
-  animation: ${appear} forwards 1s;
+  animation: ${appear} forwards 2s;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 200px;
+  }
 `;
 
 export default function Eumoji({ children }) {

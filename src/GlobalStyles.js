@@ -14,8 +14,11 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   padding: 0;
-  background-color: ${colors.bg};
   font-size: 16px;
+  background: ${colors.bg};
+  background: -moz-linear-gradient(left, ${colors.bg} 0%, #FFFFFF 50%, ${colors.bg} 100%);
+  background: -webkit-linear-gradient(left, ${colors.bg} 0%, #FFFFFF 50%, ${colors.bg} 100%);
+  background: linear-gradient(to right, ${colors.bg} 0%, #FFFFFF 50%, ${colors.bg} 100%);
 }
 `;
 

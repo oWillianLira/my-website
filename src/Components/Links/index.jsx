@@ -24,7 +24,7 @@ export default function Links() {
       <Chat>
         <Back />
 
-        <Ballon delay={0.5}>
+        <Ballon center delay={0.5}>
           <A
             href="https://www.linkedin.com/in/owillianlira/"
             title="in/owillianlira"
@@ -35,7 +35,7 @@ export default function Links() {
             <BsLinkedin /> Linkedin
           </A>
         </Ballon>
-        <Ballon delay={1.5}>
+        <Ballon center delay={1.5}>
           <A
             href="https://github.com/oWillianLira"
             title="github.com/oWillianLira"
@@ -46,7 +46,7 @@ export default function Links() {
             <BsGithub /> GitHub
           </A>
         </Ballon>
-        <Ballon delay={2}>
+        <Ballon center delay={2}>
           <A
             href="mailto:owillianlira@gmail.com"
             title="owillianlira@gmail.com"
@@ -57,7 +57,7 @@ export default function Links() {
             <SiGmail /> E-Mail
           </A>
         </Ballon>
-        <Ballon delay={3}>
+        <Ballon center delay={3}>
           <A
             href="https://t.me/owillianlira"
             title="t.me/owillianlira"

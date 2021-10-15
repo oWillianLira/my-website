@@ -5,7 +5,7 @@ const Layout = styled.section`
   flex-direction: column;
   justify-content: flex-start;
   width: 90%;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
 `;
 
