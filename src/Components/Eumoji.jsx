@@ -1,14 +1,5 @@
 import styled from 'styled-components';
-import { keyframes } from 'styled-components';
-
-const appear = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
+import { appear } from '../GlobalStyles';
 
 const Image = styled.picture`
   width: 90%;

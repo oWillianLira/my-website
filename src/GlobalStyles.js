@@ -1,10 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
+import { keyframes } from 'styled-components';
 
 export const colors = {
   bg: '#f2f2f2',
   primary: '#6688aa',
   btn: '#446688',
 };
+
+export const appear = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 const GlobalStyle = createGlobalStyle`
 * {
