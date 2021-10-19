@@ -20,7 +20,7 @@ export default function Home() {
         </Ballon>
         <Ballon delay={4}>
           <p>And here you can see:</p>
-          <a href="#o">my PORTFOLIO</a>
+          <Link to="/portfolio/">my PORTFOLIO</Link>
           <a
             target="_blank"
             rel="noreferrer"

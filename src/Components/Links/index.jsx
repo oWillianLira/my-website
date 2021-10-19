@@ -22,7 +22,7 @@ export default function Links() {
   return (
     <>
       <Chat>
-        <Back />
+        <Back small />
 
         <Ballon center delay={0.5}>
           <A

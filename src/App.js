@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Home from './Components/Home';
 import Links from './Components/Links';
+import Portfolio from './Components/Portfolio';
 
 const Area = styled.div`
   min-height: 100vh;
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/portfolio/" component={Portfolio} />
           <Route path="/links/" component={Links} />
         </Switch>
       </Router>

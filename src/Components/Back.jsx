@@ -15,7 +15,13 @@ const appear = keyframes`
 `;
 
 const Area = styled.div`
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+
+  &.small {
+    width: 320px;
+    max-width: 100%;
+  }
+
   a {
     animation: ${appear} forwards 1s;
     display: flex;
@@ -32,9 +38,9 @@ const Area = styled.div`
   }
 `;
 
-export default function Back() {
+export default function Back(small) {
   return (
-    <Area>
+    <Area className={small ? 'small' : ''}>
       <Link to="/">
         <BsArrowReturnLeft />
       </Link>
