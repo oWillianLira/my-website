@@ -1,18 +1,9 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { keyframes } from 'styled-components';
+import { appear } from '../GlobalStyles';
 
 import { BsArrowReturnLeft } from 'react-icons/bs';
 import { colors } from '../GlobalStyles';
-
-const appear = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
 
 const Area = styled.div`
   margin: 0 auto 10px;
@@ -38,10 +29,10 @@ const Area = styled.div`
   }
 `;
 
-export default function Back(small) {
+export default function Back({ small }) {
   return (
     <Area className={small ? 'small' : ''}>
-      <Link to="/">
+      <Link to="/" title="Back">
         <BsArrowReturnLeft />
       </Link>
     </Area>
