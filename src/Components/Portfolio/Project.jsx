@@ -22,7 +22,12 @@ export default function Project({ children, name, link, description }) {
       <figcaption>
         <h3 className="text-xl font-medium">{name}</h3>
         {link ? (
-          <a href={link} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-gray-500">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-gray-500"
+          >
             See online <FaExternalLinkAlt />
           </a>
         ) : (
