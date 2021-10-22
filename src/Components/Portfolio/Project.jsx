@@ -7,6 +7,7 @@ const Item = styled.figure`
   animation-name: ${appear};
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  opacity: 0;
 
   figcaption {
     & > h3 {
@@ -15,9 +16,9 @@ const Item = styled.figure`
   }
 `;
 
-export default function Project({ children, name, link, description }) {
+export default function Project({ children, name, link, delay, description }) {
   return (
-    <Item className="py-4 px-5 bg-white rounded-lg shadow-md">
+    <Item className="py-4 px-5 bg-white rounded-lg shadow-md" style={{ animationDelay: delay + 's' }}>
       {children}
       <figcaption>
         <h3 className="text-xl font-medium">{name}</h3>

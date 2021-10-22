@@ -29,15 +29,11 @@ import hyo_mobile_2 from '../../assets/portfolio/hyolanda/mobile_2.jpg';
 // btg images
 import btg_thumb from '../../assets/portfolio/btg/thumb.jpg';
 import btg_page_1 from '../../assets/portfolio/btg/page_1.jpg';
-import btg_mobile_1 from '../../assets/portfolio/btg/mobile_1.jpg';
 import btg_page_2 from '../../assets/portfolio/btg/page_2.jpg';
-import btg_mobile_2 from '../../assets/portfolio/btg/mobile_2.jpg';
 // odonto images
 import odonto_thumb from '../../assets/portfolio/odontomiss/thumb.jpg';
 import odonto_page_1 from '../../assets/portfolio/odontomiss/page_1.jpg';
-import odonto_mobile_1 from '../../assets/portfolio/odontomiss/mobile_1.jpg';
 import odonto_page_2 from '../../assets/portfolio/odontomiss/page_2.jpg';
-import odonto_mobile_2 from '../../assets/portfolio/odontomiss/mobile_2.jpg';
 // charo images
 import charo_thumb from '../../assets/portfolio/charo/thumb.jpg';
 import charo_page_1 from '../../assets/portfolio/charo/page_1.jpg';
@@ -63,6 +59,7 @@ export default function Portfolio() {
         <Project
           name="oWillianLira"
           link=""
+          delay="1"
           description="This is my old website, designed and developed by me. Fully responsive using best practices of CSS and Bootstrap. Made with WordPress."
         >
           <LightGallery speed={500} plugins={[lgZoom]}>
@@ -83,6 +80,7 @@ export default function Portfolio() {
         <Project
           name="Tecflux / Swagelok"
           link="https://tecflux.com.br/"
+          delay="1.5"
           description="A huge WP website, using lots of CPT (Custom Post Type), ACF (Custom Fields), WooCommerce, LearnPress and Bootstrap."
         >
           <LightGallery speed={500} plugins={[lgZoom]}>
@@ -97,6 +95,7 @@ export default function Portfolio() {
         <Project
           name="Hyolanda's portfolio"
           link="https://hyolanda.vercel.app/"
+          delay="2"
           description="That's a Graphic/Motion Designer portfolio, made with ReactJS with Bootstrap, React-Router-Dom and Styled-Components."
         >
           <LightGallery speed={500} plugins={[lgZoom]}>
@@ -117,46 +116,37 @@ export default function Portfolio() {
         <Project
           name="BTG+"
           link="https://www.btgmais.com/"
+          delay="2.5"
           description="A WordPress website using beautiful Gutenberg Blocks and Bulma (CSS Framework)."
         >
           <LightGallery speed={500} plugins={[lgZoom]}>
             <a href={btg_page_1}>
               <img src={btg_thumb} alt="" className="mb-5 w-full rounded border border-gray-300" />
             </a>
-            <a href={btg_mobile_1} className="hidden">
-              <img src={btg_mobile_1} alt="" loading="lazy" />
-            </a>
             <a href={btg_page_2} className="hidden">
               <img src={btg_page_2} alt="" loading="lazy" />
-            </a>
-            <a href={btg_mobile_2} className="hidden">
-              <img src={btg_mobile_2} alt="" loading="lazy" />
             </a>
           </LightGallery>
         </Project>
         <Project
           name="Odontomiss"
           link="https://odontomiss.com.br/"
+          delay="3"
           description="A simple WP website, using CPT (Custom Post Type), ACF (Custom Fields), Google Maps and Facebook API."
         >
           <LightGallery speed={500} plugins={[lgZoom]}>
             <a href={odonto_page_1}>
               <img src={odonto_thumb} alt="" className="mb-5 w-full rounded border border-gray-300" />
             </a>
-            <a href={odonto_mobile_1} className="hidden">
-              <img src={odonto_mobile_1} alt="" loading="lazy" />
-            </a>
             <a href={odonto_page_2} className="hidden">
               <img src={odonto_page_2} alt="" loading="lazy" />
-            </a>
-            <a href={odonto_mobile_2} className="hidden">
-              <img src={odonto_mobile_2} alt="" loading="lazy" />
             </a>
           </LightGallery>
         </Project>
         <Project
           name="Na Mídia"
           link="http://brunacharo.com.br/"
+          delay="3.5"
           description="A simple WP single page with full-editing dashboard using ACF (Advanced Custom Fields)."
         >
           <LightGallery speed={500} plugins={[lgZoom]}>
