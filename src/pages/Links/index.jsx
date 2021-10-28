@@ -1,12 +1,12 @@
-import Ballon from '../Ballon';
-import Chat from '../Chat';
-import Eumoji from '../Eumoji';
+import Ballon from '../../components/Ballon';
+import Chat from '../../components/Chat';
+import Eumoji from '../../components/Eumoji';
 import styled from 'styled-components';
 
 import Me from '../../assets/img/contact_me.png';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { SiGmail, SiTelegram } from 'react-icons/si';
-import Back from '../Back';
+import Back from '../../components/Back';
 
 const A = styled.a`
   min-width: 200px;

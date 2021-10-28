@@ -1,4 +1,4 @@
-import Eumoji from './Components/Eumoji';
+import Eumoji from './components/Eumoji';
 
 import curious from './assets/img/not_found.png';
 import { Link } from 'react-router-dom';

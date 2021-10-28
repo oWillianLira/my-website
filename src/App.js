@@ -1,9 +1,9 @@
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Home from './Components/Home';
-import Links from './Components/Links';
-import Portfolio from './Components/Portfolio';
+import Home from './pages/Home';
+import Links from './pages/Links';
+import Portfolio from './pages/Portfolio';
 import NotFound from './NotFound';
 
 const Area = styled.div`

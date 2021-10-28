@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { appear } from '../../GlobalStyles';
 
 import Project from './Project';
-import Back from '../Back';
+import Back from '../../components/Back';
 
 // import Lightbox
 import LightGallery from 'lightgallery/react';

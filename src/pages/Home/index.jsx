@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import Eumoji from '../Eumoji';
+import Eumoji from '../../components/Eumoji';
 
-import Ballon from '../Ballon';
-import Chat from '../Chat';
+import Ballon from '../../components/Ballon';
+import Chat from '../../components/Chat';
 import main_me from '../../assets/img/main_me.png';
 
 export default function Home() {
