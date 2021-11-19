@@ -94,7 +94,7 @@ export default function Portfolio() {
         </Project>
         <Project
           name="Hyolanda's portfolio"
-          link="https://hyolanda.vercel.app/"
+          link="https://hyolanda.art/"
           delay="2"
           description="That's a Graphic/Motion Designer portfolio, made with ReactJS with Bootstrap, React-Router-Dom and Styled-Components."
         >
