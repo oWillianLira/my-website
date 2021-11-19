@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Home from './pages/Home';
 import Links from './pages/Links';
 import Portfolio from './pages/Portfolio';
-import NotFound from './NotFound';
+import NotFound from './pages/NotFound';
 
 const Area = styled.div`
   min-height: 100vh;

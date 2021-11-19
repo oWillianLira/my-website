@@ -1,6 +1,6 @@
-import Eumoji from './components/Eumoji';
+import Eumoji from '../../components/Eumoji';
 
-import curious from './assets/img/not_found.png';
+import curious from '../../assets/img/not_found.png';
 import { Link } from 'react-router-dom';
 
 export default function NotFound() {
