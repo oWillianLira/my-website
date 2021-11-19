@@ -96,7 +96,7 @@ export default function Portfolio() {
           name="Hyolanda's portfolio"
           link="https://hyolanda.art/"
           delay="2"
-          description="That's a Graphic/Motion Designer portfolio, made with ReactJS with Bootstrap, React-Router-Dom and Styled-Components."
+          description="That's a Graphic/Motion Designer portfolio, made with ReactJS using Bootstrap, React-Router-Dom and Styled-Components."
         >
           <LightGallery speed={500} plugins={[lgZoom]}>
             <a href={hyo_page_1}>
