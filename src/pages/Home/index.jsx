@@ -33,7 +33,7 @@ export default function Home() {
       </Chat>
 
       <Eumoji>
-        <img src={main_me} alt="A drawing of me" />
+        <img src={main_me} alt="Here I am" />
       </Eumoji>
     </>
   );
